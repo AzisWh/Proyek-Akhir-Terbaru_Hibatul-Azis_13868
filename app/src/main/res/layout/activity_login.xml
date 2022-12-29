@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#E6E6E6">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:id="@+id/Lshape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/LArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrowback"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:id="@+id/Ltext1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/Lshape"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Isi Dibawah Ini"
+        android:id="@+id/Ltext2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/Ltext1"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginLnr"
+        android:padding="30dp"
+        android:layout_below="@+id/Ltext2">
+
+        <EditText
+            android:id="@+id/Lemail"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:hint="Input Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/Lpass"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:hint="Input Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/button"
+        android:width="300dp"
+        android:layout_below="@+id/loginLnr"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Llogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login With Google"
+        android:background="@drawable/button"
+        android:width="300dp"
+        android:layout_below="@+id/Llogin"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Lgugel"/>
+
+
+</RelativeLayout>

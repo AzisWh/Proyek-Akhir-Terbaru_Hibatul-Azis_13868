@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="#E6E6E6">
+
+    <View
+        android:id="@+id/abu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#767676" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/floatingcart"
+            android:src="@drawable/ic_baseline_shopping_cart_24">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <ImageView
+        android:id="@+id/Pensimu"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/abu"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:layout_below="@+id/abu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:textColor="@color/white"
+        android:background="@color/button"
+        android:id="@+id/LogOut"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/srcbar"
+        android:layout_centerHorizontal="true"
+        android:hint="Cari Pensi Apa Hari Ini?"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/button"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/Pensimu"/>
+
+    <ScrollView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/srcbar">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycle"
+                android:padding="4dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycle_dua"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
